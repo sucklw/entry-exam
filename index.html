@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Входной контроль</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main__form">
+        <div class="main__form_items">
+            <h2 class="main__form_title">Задать вопрос</h2>
+            <form action="https://60376bfd5435040017722533.mockapi.io/form" method="post">
+                <div><input class="main__form_ask" type="text" name="name" pattern="^[А-Яа-яЁё\s-]+$" required placeholder="Фамилия Имя Отчество *"></div>
+                <div><input class="main__form_ask" type="tel" name="phone" pattern="\+?[0-9\s\-\(\)]+" required placeholder="Телефон *"></div>
+                <div><input class="main__form_ask" type="email" name="email" placeholder="Email"></div>
+                <div><input class="main__form_submit" type="submit" pattern="\S+@[a-z]+.[a-z]+" value="ОТПРАВИТЬ ЗАПРОС" multiple></div>
+            </form>  
+        </div>
+    </div>
+</body>
+</html>
